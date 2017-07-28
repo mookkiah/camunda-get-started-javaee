@@ -15,3 +15,5 @@ If you want to follow the tutorial along please clone this repository and checko
 git clone https://github.com/camunda/camunda-get-started-javaee.git
 git checkout -f Start
 ```
+
+using_openjpa branch has working version which can be build and deployed to TomEE 1.7.4 after following tomcat manual installation procedure.
