@@ -13,11 +13,13 @@
 
 package org.camunda.bpm.getstarted.pizza;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Version;
-import java.io.Serializable;
 
 @Entity
 public class OrderEntity implements Serializable {
@@ -25,7 +27,7 @@ public class OrderEntity implements Serializable {
   private static  final long serialVersionUID = 1L;
 
   @Id
-  @GeneratedValue
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   protected Long id;
 
   @Version
