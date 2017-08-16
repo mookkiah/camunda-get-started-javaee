@@ -42,20 +42,13 @@
       <artifactId>camunda-ejb-client</artifactId>
     </dependency>
 
-    <!-- Java EE 6 Specification -->
+    <!-- Java EE 7 Specification -->
     <dependency>
-      <groupId>org.jboss.spec</groupId>
-      <artifactId>jboss-javaee-7.0</artifactId>
-      <version>1.0.3.Final</version>
-      <type>pom</type>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>xalan</artifactId>
-          <groupId>xalan</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
+		<groupId>org.apache.tomee</groupId>
+		<artifactId>tomee-embedded</artifactId>
+		<version>7.0.3</version>
+		<scope>provided</scope>
+	</dependency>
   </dependencies>
 
   <build>
